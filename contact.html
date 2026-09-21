@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Martin Fernandez Photography — let's collaborate.">
+  <title>Contact — Martin Fernandez Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Martin Fernandez Photography</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTACT -->
+  <section class="contact-block section" style="padding-top: 140px;">
+    <div class="container">
+      <span class="label reveal">Get in Touch</span>
+      <h2 class="section-title reveal d1">Contact Me</h2>
+      <p class="contact-intro reveal d1">Looking to collaborate or need more information? Let's talk. Use the form below, and I'll get back to you shortly.</p>
+      <p class="contact-tagline reveal d2">Your next adventure starts here.</p>
+
+      <div class="contact-layout">
+        <div class="contact-details reveal">
+          <div>
+            <span class="detail-label">Email</span>
+            <div class="detail-value"><a href="mailto:contact@martinfernandezphotography.com">contact@martinfernandezphotography.com</a></div>
+          </div>
+          <div>
+            <span class="detail-label">Phone</span>
+            <div class="detail-value"><a href="tel:+56934403345">+56 9 3440 3345</a></div>
+          </div>
+          <div>
+            <span class="detail-label">Workshop</span>
+            <div class="detail-value">Camino El Parque 100<br>Santiago, RM, Chile</div>
+          </div>
+          <div>
+            <span class="detail-label">Based in</span>
+            <div class="detail-value">Santiago, Chile<br>Available worldwide</div>
+          </div>
+        </div>
+
+        <!--
+          SETUP: Go to formspree.io → create account → new form → copy your ID
+          Replace YOUR_FORM_ID below with your actual Formspree form ID
+        -->
+        <form class="contact-form reveal d1" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn">Send</button>
+            <p class="form-note">I'll get back to you shortly.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">Martin Fernandez Photography</div>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="mailto:contact@martinfernandezphotography.com">contact@martinfernandezphotography.com</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2025 Martin Fernandez Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
